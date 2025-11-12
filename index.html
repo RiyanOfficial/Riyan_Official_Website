@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riyan Official Store</title>
+
+  <!-- Font & Icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- File CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING -->
+  <div id="loading-screen">
+    <h1>RIYAN OFFICIAL</h1>
+    <div class="loader"></div>
+    <p>Loading To Website...</p>
+  </div>
+
+  <!-- HEADER -->
+  <header class="app-header">RIYAN OFFICIAL WEBSITE</header>
+
+  <!-- MAIN -->
+  <main class="app-main" id="appMain">
+    <!-- DASHBOARD -->
+    <section id="page-dashboard" class="page show">
+      <div class="banner-card">
+        <img src="https://files.catbox.moe/7v49yv.mp4" alt="Banner" />
+        <div class="banner-text">
+          <div>📢 Banner Kamu</div>
+          <div>Ganti banner.jpg atau tambahkan URL</div>
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="btn-stack">
+        <a id="btn-telegram" class="glow-btn telegram" href="https://t.me/riyanofficial08"><i class="fa-brands fa-telegram"></i>Channel Telegram</a>
+        <a id="btn-wa-channel" class="glow-btn whatsapp" href="https://whatsapp.com/channel/0029VbBadVw6GcGHe3EaC514"><i class="fa-brands fa-whatsapp"></i>WhatsApp Channel</a>
+        <a id="btn-developer" class="glow-btn developer" href="https://wa.me/6285715989482" target="_blank">
+          <i class="fa-solid fa-user-gear"></i>Contact Developer
+        </a>
+      </div>
+
+      <div class="content-placeholder">Ruang Konten (isi nanti)</div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section id="page-payment" class="page">
+      <h2>Pembayaran</h2>
+      <p>Scan QRIS atau pilih e-wallet</p>
+
+      <div class="qris-wrap">
+        <img class="qris-img" src="https://files.catbox.moe/4zuizi.jpg" alt="QRIS" />
+        <a id="downloadQris" class="download-qris" href="qris.jpg" download>⬇️ Download QRIS</a>
+      </div>
+
+      <div class="pay-list">
+        <div class="pay-row"><div><b>Dana</b> <span>085715989482</span></div><button class="copy-btn" data-copy="085715989482">Salin</button></div>
+        <div class="pay-row"><div><b>Gopay</b> <span>085715989482</span></div><button class="copy-btn" data-copy="085715989482">Salin</button></div>
+        <div class="pay-row"><div><b>OVO</b> <span>-</span></div><button class="copy-btn" data-copy="-">Salin</button></div>
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="page-produk" class="page">
+      <h2>Produk Kami</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="https://i.ibb.co/PGdY0DM/product-sample.jpg" alt="Produk 1" />
+          <div class="product-info">
+            <div>Produk Premium 1</div>
+            <div class="price">Rp 55550.000</div>
+            <button class="buy-btn" data-wh="628xxxxxxxxxx" data-item="Ku Isi Kapan Kapan Soalnya Malas">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIYAN AI -->
+    <section id="page-riyan" class="page">
+      <h2>Riyan AI Assistant</h2>
+      <div class="chat-wrap">
+        <div id="chat-container">
+          <div class="message bot">Halo! Saya Riyan AI. Ada yang bisa saya bantu hari ini?</div>
+        </div>
+
+        <div class="input-row">
+          <input id="user-input" type="text" placeholder="Ketik pesan..." />
+          <button id="send-btn">Kirim</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- NAV -->
+  <nav class="bottom-nav">
+    <div class="nav-item active" data-target="page-dashboard"><i class="fa-solid fa-house"></i><span>Dashboard</span></div>
+    <div class="nav-item" data-target="page-payment"><i class="fa-solid fa-credit-card"></i><span>Payment</span></div>
+    <div class="nav-item" data-target="page-produk"><i class="fa-solid fa-box"></i><span>Produk</span></div>
+    <div class="nav-item" data-target="page-riyan"><i class="fa-solid fa-robot"></i><span>Riyan AI</span></div>
+  </nav>
+
+  <!-- JS eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
